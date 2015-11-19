@@ -1,12 +1,12 @@
 # =============================================================================
-# jdeathe/centos-ssh
+# ggriffin924/centos-ssh
 #
 # CentOS-6 6.6 x86_64 / EPEL/IUS Repos. / OpenSSH / Supervisor.
 # 
 # =============================================================================
 FROM centos:centos6.6
 
-MAINTAINER James Deathe <james.deathe@gmail.com>
+MAINTAINER Griffin <ggriffin924@gmail.com>
 
 # -----------------------------------------------------------------------------
 # Import the RPM GPG keys and install Repositories
