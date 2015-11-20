@@ -28,7 +28,6 @@ RUN yum -y install \
 	openssh-clients-5.3p1-112.el6_7 \
 	python-pip-7.1.0-1.el6 \
 	yum-plugin-versionlock-1.1.30-30.el6 \
-	cracklib-dicts \
 	&& yum versionlock add \
 	vim-minimal \
 	sudo \
@@ -37,6 +36,7 @@ RUN yum -y install \
 	openssh-clients \
 	python-pip \
 	yum-plugin-versionlock \
+	&& yum reinstall -y cracklib-dicts \
 	&& rm -rf /var/cache/yum/* \
 	&& yum clean all
 
